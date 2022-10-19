@@ -25,11 +25,14 @@
 - Added array of 10 object results and exported to be used in app.js
 
 ### index.html
-
+- Added Google logo, magnifying glass and search bar
+- Added search and random buttons
+- Clicking anywhere on search bar now enters textbox
 
 
 ### style.css
-
+- Added styling to site - background, positioning, image size, etc.
+- Added hover design to search bar
 
 ### script.js
 - Added general structure to functions and variables
