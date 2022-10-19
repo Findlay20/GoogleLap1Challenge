@@ -27,9 +27,9 @@ function showMovies(results) {
     for (let m = 0; m < results.length; m++) {
         const element = results[m];
         const newH3 = document.createElement('h3');
-        newH3.textContent = `Name: ${element.title}`;
+        newH3.textContent = `${element.title}`;
         const newP = document.createElement('p');
-        newP.textContent = `Description: ${element.desc}`;
+        newP.textContent = `${element.desc}`;
         resultSection.append(newH3);
         resultSection.append(newP);
     }
@@ -46,9 +46,9 @@ function getRandomResult(e) {
 function showRandomResult(random) {
     hideSearch();
     const newH3 = document.createElement('h3');
-    newH3.textContent = `Name: ${random.title}`;
+    newH3.textContent = `${random.title}`;
     const newP = document.createElement('p');
-    newP.textContent = `Description: ${random.desc}`;
+    newP.textContent = `${random.desc}`;
     resultSection.append(newH3);
     resultSection.append(newP);
     
