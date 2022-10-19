@@ -1,17 +1,6 @@
-results = [
-    {
-        
-    },
-    {
-        
-    },
-    {
+const results = require('data');
 
-    },
-]
-
-
-
+// Generate random result
 function getRandomResult () {
     return results[Math.floor(Math.random()*quotes.length)]
 }
