@@ -37,18 +37,22 @@ div.box{
     height: 44px;
     border: 1px solid #5f6368;
     border-radius: 24px;
-    width: 550px;
+    width: 550px; 
+}
 
-    
+div.box:hover {
+    background-color: lightgray;
 }
 
 input#search {
-    border: #202124;
+    outline: none;
+    border: none;
     width: 460px;
     color: white;
     font-size: 16px;
     height: 25px;
     margin: auto;
+    background-color: transparent;
 }
 
 
