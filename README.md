@@ -28,6 +28,10 @@
 - Added Google logo, magnifying glass and search bar
 - Added search and random buttons
 - Clicking anywhere on search bar now enters textbox
+- Linked to script.js
+
+### search.html
+- Added google logo and back to homepage button
 
 
 ### style.css
@@ -37,6 +41,8 @@
 ### script.js
 - Added general structure to functions and variables
 - Added targetting for buttons in index.html
+- Search button redirects to search.html
+
 
 ## Bugs
 
