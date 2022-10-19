@@ -1,10 +1,10 @@
 const searchBtn = document.querySelector('#sbutton');
 const luckyBtn = document.querySelector('#lucky');
 
-searchBtn.addEventListener('click', getAllQuotes)
-luckyBtn.addEventListener('click', getRandomQuote)
+searchBtn.addEventListener('click', getAllResults)
+luckyBtn.addEventListener('click', getRandomResult)
 
-function getAllQuotes(e) {
+function getAllResults(e) {
     e.preventDefault();
     window.location.replace('search.html')
     fetch('http://localhost:3000/results')
@@ -12,7 +12,7 @@ function getAllQuotes(e) {
         .then(resp => {     })
 }
 
-function getRandomQuote(e) {
+function getRandomResults(e) {
     e.preventDefault();
     fetch('http://localhost:3000/results/random')
         .then(resp => resp.json())
