@@ -14,28 +14,41 @@ body {
 
 div.logo img {
     margin: auto;
+    margin-top: 275px;
+    margin-bottom: 20px;
+    
     display: block;
 
 }
 
 div.textbox img {
-    width: 20px;
+    position: relative;
+    width: 25px;
     height: auto;
-    margin: 2px;
+    margin-left: 10px;
+    margin-top: 7px;
     align-content: center;
 }
 
 div.box{
     display: flex;
+    margin: auto;
     z-index: 3;
     height: 44px;
     border: 1px solid #5f6368;
     border-radius: 24px;
-    width: 500px;
+    width: 550px;
 
     
 }
 
 input#search {
-    border: none;
+    border: #202124;
+    width: 460px;
+    color: white;
+    font-size: 16px;
+    height: 25px;
+    margin: auto;
 }
+
+
