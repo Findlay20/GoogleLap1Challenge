@@ -21,6 +21,12 @@ app.get('/results/random', (req, res) => {
     res.send(getRandomResult());
 });
 
+// Find by id and handling for out-of-range IDs
+app.get('/results/:id', (req, res) => {
+    const result = results.find(r => r.id === parseInt(req.params.id));
+    if(!result) return res.status(404).send('There is no result with this is id. Choose a number between 1 and 10.');
+    res.send(result)
+  });
 
 // Start server
 
