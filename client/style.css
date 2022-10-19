@@ -26,11 +26,10 @@ div.textbox img {
     width: 25px;
     height: auto;
     margin-left: 10px;
-    margin-top: 7px;
     align-content: center;
 }
 
-div.box{
+div.textbox{
     display: flex;
     margin: auto;
     z-index: 3;
@@ -38,10 +37,13 @@ div.box{
     border: 1px solid #5f6368;
     border-radius: 24px;
     width: 550px; 
+    transition: 0.5s;
 }
 
-div.box:hover {
-    background-color: lightgray;
+div.textbox:hover {
+    background-color: #363534;
+    transition: 0.5s;
+
 }
 
 input#search {
@@ -53,6 +55,7 @@ input#search {
     height: 25px;
     margin: auto;
     background-color: transparent;
+    outline: none;
 }
 
 
