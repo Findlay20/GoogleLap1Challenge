@@ -1,6 +1,6 @@
 results = [
     {
-
+        
     },
     {
         
@@ -18,7 +18,7 @@ function getRandomResult () {
 
 // Retrieve all results
 app.get('/results', (req, res) => {
-    res.send(quotes);
+    res.send(results);
 });
 
 //Retrieve random result
