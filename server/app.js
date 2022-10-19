@@ -12,7 +12,7 @@ app.get('/results', (req, res) => {
 
 //Retrieve random result
 app.get('/results/random', (req, res) => {
-    res.send(getRandomQuote());
+    res.send(getRandomResult());
 });
 
 
