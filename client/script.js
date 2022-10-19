@@ -12,7 +12,7 @@ function getAllResults(e) {
         .then(resp => {     })
 }
 
-function getRandomResults(e) {
+function getRandomResult(e) {
     e.preventDefault();
     fetch('http://localhost:3000/results/random')
         .then(resp => resp.json())
