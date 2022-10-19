@@ -1,8 +1,14 @@
-const results = require('data');
+const results = require('./data');
+
+const express = require('express')
+const cors = require('cors');
+
+const app = express()
+app.use(cors());
 
 // Generate random result
 function getRandomResult () {
-    return results[Math.floor(Math.random()*quotes.length)]
+    return results[Math.floor(Math.random()*results.length)]
 }
 
 // Retrieve all results
