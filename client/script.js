@@ -39,5 +39,11 @@ function getRandomResult(e) {
     e.preventDefault();
     fetch('http://localhost:3000/results/random')
         .then(resp => resp.json())
-        .then(resp => getRandomResult)
+        .then(showRandomResult)
+
+        
+}
+function showRandomresult(random) {
+    const element = Math.floor(Math.random() * )
+    const newH3 = document.createElement('h3');
 }
