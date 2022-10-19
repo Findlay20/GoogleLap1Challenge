@@ -30,5 +30,5 @@ function getRandomResult(e) {
     e.preventDefault();
     fetch('http://localhost:3000/results/random')
         .then(resp => resp.json())
-        .then(resp => {     })
+        .then(resp => getRandomResult)
 }
