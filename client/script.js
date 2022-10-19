@@ -43,7 +43,4 @@ function getRandomResult(e) {
 
         
 }
-function showRandomresult(random) {
-    const element = Math.floor(Math.random() * )
-    const newH3 = document.createElement('h3');
-}
+
