@@ -1,8 +1,8 @@
-const searchBtn = document.querySelector('#search');
-const randomBtn = document.querySelector('#random');
+const searchBtn = document.querySelector('#sbutton');
+const luckyBtn = document.querySelector('#lucky');
 
 searchBtn.addEventListener('click', getAllQuotes)
-randomBtn.addEventListener('click', getRandomQuote)
+luckyBtn.addEventListener('click', getRandomQuote)
 
 function getAllQuotes(e) {
     e.preventDefault();
