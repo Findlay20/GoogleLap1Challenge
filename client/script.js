@@ -16,6 +16,10 @@ function getAllResults(e) {
 
 function hideSearch() {
     searchSection.style.display = 'none'
+    const homepage = document.createElement('a');
+    homepage.href = 'index.html';
+    homepage.textContent = '<-- Back to search'
+    resultSection.append(homepage)
 }
 
 function showMovies(results) {
@@ -29,10 +33,6 @@ function showMovies(results) {
         resultSection.append(newH3);
         resultSection.append(newP);
     }
-    const homepage = document.createElement('a');
-    homepage.href = 'index.html';
-    homepage.textContent = '<-- Back to search'
-    resultSection.append(homepage)
 }
 
 function getRandomResult(e) {
@@ -43,7 +43,13 @@ function getRandomResult(e) {
 
         
 }
-function showRandomresult(random) {
-    const element = Math.floor(Math.random() * )
+function showRandomResult(random) {
+    hideSearch();
     const newH3 = document.createElement('h3');
+    newH3.textContent = `Name: ${random.title}`;
+    const newP = document.createElement('p');
+    newP.textContent = `Description: ${random.desc}`;
+    resultSection.append(newH3);
+    resultSection.append(newP);
+    
 }
