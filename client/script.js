@@ -18,7 +18,7 @@ function hideSearch() {
     searchSection.style.display = 'none'
     const homepage = document.createElement('a');
     homepage.href = 'index.html';
-    homepage.textContent = '<-- Back to search'
+    homepage.textContent = 'Back to search'
     resultSection.append(homepage)
 }
 

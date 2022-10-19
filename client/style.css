@@ -121,6 +121,15 @@ a {
     font-family: 'Raleway';
     font-weight: 800;
     text-align: center;
+    transition: 0.5s;
+    line-height: 50px;
+    
+}
+
+a:hover {
+    color: white;
+    background-color: black;
+    transition: 0.5s;
 }
 
 
