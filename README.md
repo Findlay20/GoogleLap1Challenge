@@ -22,7 +22,7 @@
 - Refined speicfic id route and added hadnling for out-of-range ids - /results/:id
 
 ### data.js
-- Added array of 10 object results and exports to be used in app.js
+- Added array of 10 object results and exported to be used in app.js
 
 ### index.html
 
