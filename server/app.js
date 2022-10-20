@@ -30,6 +30,7 @@ app.get('/results/:id', (req, res) => {
     res.send(result)
   });
 
-// Start server
+// Start server with dynamic port
 
-app.listen(3000, () => console.log(`\nExpress departing now from port 3000!\n`))
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Listening on port ${port}`));
