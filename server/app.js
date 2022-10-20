@@ -6,6 +6,8 @@ const cors = require('cors');
 const app = express()
 app.use(cors());
 
+app.get('/', (req, res) => res.send('Our GOTY API'));
+
 // Generate random result
 function getRandomResult () {
     return results[Math.floor(Math.random()*results.length)]
